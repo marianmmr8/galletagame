@@ -28,6 +28,9 @@ h1 , h3{
     transform: scale(1.2);
 }
 
+.giro{
+    transform: rotate(10deg);
+}
 
 button{
     padding: 0.5rem 1rem;

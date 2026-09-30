@@ -27,8 +27,20 @@ galleta.classList.add('grande')
 setTimeout(() => {
     galleta.classList.remove('grande')
 }, 100);
+// comprobar si ha subido de nivel
+// cambio de nivel cada dienclicks
+if((contador % 10) === 0){
+    galleta.classList.add('giro')
+}
 
+// quitar la clase grande
+
+setTimeout(()=>{
+    galleta.classList.remove('grnde')
+    galleta.classList.remove('giro')
+}, 100)
 })
+
 btnboton.addEventListener('click',()=>{
     contador = 0
     contadortxt.innerHTML = `Clicks: ${contador}`
