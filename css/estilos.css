@@ -23,6 +23,11 @@ h1 , h3{
     text-align: center;
     
 }
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(95, 57, 6) ;
+    font: bold;
+}
 .grande{
 
     transform: scale(1.2);

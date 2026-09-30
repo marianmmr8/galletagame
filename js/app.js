@@ -1,14 +1,20 @@
 const galleta = document.querySelector("#imagengalleta")
 const contadortxt = document.querySelector("#contador")
 const btnboton = document.querySelector("#boton")
+const nivel = document.querySelector("#nivel")
 
 let contador = 0
+let n = 0
 // comprobar si tengo el iten en otro navegador
 if (localStorage.getItem("clicks")) {
     let contador = localStorage.getItem('clicks')
 }
+if(localStorage.getItem("nivel")){
+    n = localStorage.getItem("nivel")
+}
 // leer los click en el storage
 contadortxt.innerHTML = `Clicks: ${contador}`
+nivel.innerHTML = `nivel ${n}`
 
 // le sumamos uno a contador
 galleta.addEventListener('click', () =>{
@@ -31,6 +37,11 @@ setTimeout(() => {
 // cambio de nivel cada dienclicks
 if((contador % 10) === 0){
     galleta.classList.add('giro')
+    let n = contador / 10 
+    n = parseInt(n)
+    nivel.innerHTML = `nivel ${n}`
+
+    localStorage.setItem("nivel", n)
 }
 
 // quitar la clase grande
