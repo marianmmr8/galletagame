@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: burlywood;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img{
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    transition: transform 0.1s ease;
+}
+h1 , h3{
+    text-align: center;
+    
+}
+.grande{
+
+    transform: scale(1.2);
+}
+
+
+button{
+    padding: 0.5rem 1rem;
+    background-color:rgb(95, 57, 6);
+    color: white;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    display: block;
+    border-radius: 10px;
+}
