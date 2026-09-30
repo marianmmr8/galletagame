@@ -37,7 +37,7 @@ setTimeout(() => {
 // cambio de nivel cada dienclicks
 if((contador % 10) === 0){
     galleta.classList.add('giro')
-    let n = contador / 10 
+    n = contador / 10 
     n = parseInt(n)
     nivel.innerHTML = `nivel ${n}`
 
@@ -54,7 +54,9 @@ setTimeout(()=>{
 
 btnboton.addEventListener('click',()=>{
     contador = 0
+    n = 0
     contadortxt.innerHTML = `Clicks: ${contador}`
+    nivel.innerHTML =`nivel ${n}`
     localStorage.setItem("clicks", contador)
 })
 
