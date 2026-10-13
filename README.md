@@ -9,4 +9,4 @@ Un boton al que darle clases.
 
 Lo puedes encontrar en Netlify
 
-galletitagame.netlify.app
+https://galletitagame.netlify.app
